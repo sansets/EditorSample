@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Editor Sample</string>
+
+    <string name="title_preview">Preview</string>
+
+    <string name="action_format_bold">Bold</string>
+    <string name="action_format_italic">Italic</string>
+
+    <string name="hint_input_text">Input your text here…</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/group_format">
+        <item
+            android:id="@+id/action_format_bold"
+            android:icon="@drawable/ic_format_bold_black_24dp"
+            android:orderInCategory="1"
+            android:title="@string/action_format_bold"
+            app:showAsAction="ifRoom|withText" />
+
+        <item
+            android:id="@+id/action_format_italic"
+            android:icon="@drawable/ic_format_italic_black_24dp"
+            android:orderInCategory="1"
+            android:title="@string/action_format_italic"
+            app:showAsAction="ifRoom|withText" />
+    </group>
+
+</menu>
