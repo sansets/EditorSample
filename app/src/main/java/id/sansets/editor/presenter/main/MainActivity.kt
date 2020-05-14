@@ -9,14 +9,11 @@ import androidx.core.view.children
 import androidx.core.widget.doAfterTextChanged
 import id.sansets.editor.R
 import id.sansets.editor.databinding.ActivityMainBinding
-import org.wordpress.aztec.AztecParser
 import org.wordpress.aztec.AztecTextFormat
 
 class MainActivity : AppCompatActivity(), MainActionListener, ActionMode.Callback {
 
     private lateinit var binding: ActivityMainBinding
-
-    private val aztecParser: AztecParser by lazy { AztecParser() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -65,7 +62,7 @@ class MainActivity : AppCompatActivity(), MainActionListener, ActionMode.Callbac
      * Live preview for HTML editor values
      */
     override fun onShowTextPreview() {
-        binding.tvPreview.text = aztecParser.toHtml(binding.etEditor.text)
+        binding.tvPreview.text = binding.etEditor.toHtml()
     }
 
     override fun onActionItemClicked(mode: ActionMode?, item: MenuItem?): Boolean {
